@@ -60,8 +60,10 @@ public class RockPaperScissor {
 			
 		}
 		
-		for (int i=0; i<3; i++)
-			System.out.print(arr[i] + " - "); 
+ 
+		System.out.println("victories: " + arr[0]);
+		System.out.println("losses: " + arr[1]);
+		System.out.println("draw: " + arr[2]);
 
 	}
 
@@ -120,7 +122,7 @@ public class RockPaperScissor {
 		
 	}
 	
-	public static int userChoice() {
+	public static int userChoice() throws SQLException {
 		Scanner input = new Scanner(System.in);
 		System.out.println("Choose corresponding number:\n1. Rock \n2. Paper \n3. Scissor");
 		int userChoice = input.nextInt();
